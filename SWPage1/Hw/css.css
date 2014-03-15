@@ -1,0 +1,331 @@
+/*Import*/
+@import url(http://reset5.googlecode.com/hg/reset.min.css);
+@import url(http://fonts.googleapis.com/css?family=Syncopate:400,700|Oepn+Sans:400,300,600,700);
+
+#container
+{
+    float:left;
+    width:100%;
+    height:auto;
+}
+body
+{
+    background:#d7d7d5 url(../img/gray_noise.png) repeat;
+    font:300 100% open Sans;
+}
+h1
+{
+    font-family: Syncopate;
+    font-size:1.5em;
+    color:#555;
+    text-shadow: 1px 1px 1px #e8e2dd;
+}
+a
+{
+    color:#666;
+    text-decoration:none;
+}
+span.emphasize
+{
+    /*font:300 22px avenir;*/
+    font-weight:bold;
+    font-size: 22px;
+    font-family: avenir;
+    color:#ff0000;
+}
+#header_menu
+{
+    background:#f4f4f4;
+    color:#b2a59a;
+    top:0;
+    display:block;
+    height:auto;
+    text-align:right;
+}
+span.phone
+{
+    color:#555;
+}
+li.nav_menu_item
+{
+    font-size:0.95em;
+    display:inline-block;
+    padding:0.85em 0.55em 0.85em 0.45em;
+}
+li.link:hover
+{
+    color:#444;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms eases;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition:all 500ms ease;
+
+}
+li.contact_me
+{
+    color:#444;
+    font-weight:800;
+    text-decoration:underline;
+}
+li.contact_me
+{
+    color:#222;
+}
+
+span.address
+{
+    display:inline-block;
+    float: left;
+    padding:0.85em 0.55em 0.65em 1em;
+}
+
+li.link
+{
+    border-right: 1px solid #c5c5c5;
+    cursor:pointer;
+}
+
+/*Body Css*/
+#resume_header
+{
+    float:left;
+    width:100%;
+    height:auto;
+    text-align:right;
+    border-bottom: 1px solid #c5c5c5;
+    position:relative;
+    top:0;
+}
+div.name
+{
+    color:#3b3b3b;
+    font:700 2em Syncopate;
+    text-shadow: 1px 1px 1px #ffffff;
+    padding:0.65em 0.5em 0.35em 0.5em;
+    float:left;
+}
+div.section_link
+{
+    color: #666;
+    font:300 1.2em 'Open Sans';
+    padding: 1.1em;
+    float:right;
+}
+div.section_link > a:hover
+{
+    color:#222;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms eases;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition:all 500ms ease;
+}
+#div
+{
+    color:red;
+}
+
+div.section_link > a:hover
+{
+    cursor:pointer;
+}
+div.designation
+{
+    color: white;
+    font:700 1.2em 'Open Sans';
+    background-color:#308670;
+    padding: 1.1em;
+    float:right;
+}
+div.about_me
+{
+    color: white;
+    background-color:rgba(207,85,58,0.90);
+    letter-spacing:0.02em;
+    line-height:1.65;
+    padding: 0.35em 2em 2em 2em;
+    width:60%;
+    float:left;
+    /*text-align:justify;*/
+}
+strong
+{
+    font-weight:600;
+}
+#skills
+{
+    background-color:rgba(150,150,150,0.20);
+    padding: 0.35em 2em 2em 2em;
+    width:70%;
+    float:right;
+}
+ul.skillset
+{
+    font-size:0.85em;
+}
+ul.skillset > li
+{
+    color: #262626;
+    font-weight:100;
+    background-color:#afafaf;
+    display:inline-block;
+    padding: 0.15em 0.75em 0.25em 0.75em;
+    border-radius:0.15em;
+    margin:0.25em 0.25em 0.45em 0.25em;
+}
+ul.skillset > li:hover
+{
+    background-color:#333;
+    color:#ffffff;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms eases;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition:all 500ms ease;
+    cursor:default;
+}
+#education
+{
+    background-color:rgba(150,150,150,0.20);
+    float:left;
+    padding-bottom:3em;
+    width:80%;
+}
+div.qualification
+{
+    font:300 1.75em 'Open Sans';
+    float:left;
+    padding:0.05em;
+}
+
+div.university
+{
+    font:300 1.75em 'Open Sans';
+    float:left;
+    padding:0.05em;
+    width:80%;
+}
+div.course_1
+{
+    float:left;
+    padding-top:1em;
+    width:50%;
+    text-align:left;
+}
+span.sub
+{
+    color: #9a9a9a;
+    font-size:0.55em;
+    font-size: 12px;
+    font-family: avenir;
+    color:#000;
+}
+
+div.course_1 > ul
+{
+    list-style-type: none;
+    padding-right: 1em;
+    line-height:1.75em;
+    text-transform:capitalize;
+}
+div.course_1 > ul > li
+{
+    color: #666;
+}
+div.course_1 > ul > li:nth-child(2n+1)
+{
+    color: #555;
+}
+div.course_1 > ul > li:hover
+{
+    color:#222;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms eases;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition:all 500ms ease;
+    cursor:default;
+}
+div.course_2
+{
+    float:left;
+    padding-top:1em;
+    width:50%;
+    text-align:left;
+}
+div.course_2 > ul
+{
+    border-right:none;
+    border-left: 1px solid gray;
+    padding-left:1em;
+}
+#experience
+{
+    background-color:rgba(150,150,150,0.20);
+    padding: 0.35em 2em 2em 2em;
+    width:70%;
+    float:right;
+}
+div.experience_block
+{
+    height:auto;
+    float:left;
+    width:98%;
+    border-left: 1px solid #acacac;
+    margin: 2em 0.5em 0.5em 0.5em;
+}
+span.exp_title
+{
+    font:300 1.5em 'Open Sans';
+    color:#222;
+    display:inline-block;
+    padding: 0.35em 0.15em 0.15em 0.15em;
+    width:80%;
+    float:left;
+}
+
+span.exp_location
+{
+    font:300 1.0em 'Open Sans';
+    color:#222;
+    display:inline-block;
+    padding: 0.15em;
+    width:80%;
+    float:left;
+}
+span.exp_link
+{
+    font:300 0.85em 'Open Sans';
+    color:#555;
+    display:inline-block;
+    padding: 0.15em;
+    float:right;
+}
+ul.exp_list
+{
+    background-color:rgba(21,131,149,1);
+    color:white;
+    display:inline-block;
+    margin:1em;
+    padding: 2em;
+    list-style-type:none;
+}
+ul.exp_list > li
+{
+    margin-bottom: 0.5em;
+}
+footer
+{
+    background-color:rgba(21,131,149,0.20);
+    display:block;
+    width:100%;
+    float:left;
+    bottom:0;
+}
+div.copyright
+{
+    text-shadow:1px 1px 1px white;
+    padding-top:1em;
+    text-align:center;
+}
