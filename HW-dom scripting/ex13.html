@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>External Stylesheet</title>
+    <script type="text/javascript">
+        window.onload = function(){
+
+            var btn =document.getElementById('btn1');
+
+            btn.onclick = function(){
+                var head =document.getElementByTagName('head')[0];
+                var link =document.createElement('link');
+                link.href ='css/base.css';
+                link.rel ='stylesheet';
+                head.appendChild(link);
+                console.dir(head);
+            };
+        };
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>External Stylesheet</h1>
+    <button id='btn1'>Add external Stylesheet</button>
+
+</div>
+</body>
+</html>

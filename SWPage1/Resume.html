@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
-<div id='container'>
+
 <head>
     <title>Contact Me</title>
+
     <link rel="stylesheet" href="Hw/css.css"/>
-    <header id="header_menu">
+
+</head>
+<body>
+<div id='container'>
+
+<header id="header_menu">
+
     <span class="address"> 1600 B st., APt. #5C | Anytown, OH 00000 |<span>(000)555-1212</span></span>
     <nav>
         <ul>
@@ -12,32 +19,35 @@
             <li class="nav_menu_item link"><a href="mailto:rohit.arora@mailinator>com?subject=Query">Email Me</a></li>
             <li class="nav_menu_item link"><a target=_blank" href="http://www.twitter.com">Twitter</a></li>
             <li class="nav_menu_item link"><a target=_blank" href="http://facebook.com">Facebook</a></li>
-            <li> class="nav_menu_item link"><a target=_blank" href="http://www.plus.google.com">Google+</a></li>
+            <li class="nav_menu_item link"><a target=_blank" href="http://www.plus.google.com">Google+</a></li>
 
         </ul>
     </nav>
-    </header>
+</header>
 
-    <div id='resume_header'>
-        <div class="name">Sarita Bhoot</div>
-        <div class="designation">Web Developer</div>
-        <div class="section_link"><a href="#experience">Experience</a></div>
-        <div class="section_link"><a href="#education">Education</a></div>
-        <div class="section_link"><a href="#skills">Skills</a></div>
+    <div>
+        <div>Sarita Bhoot</div>
+        <div>Web Developer</div>
+        <div><a href="#experience">Experience</a> </div>
+        <div><a href="#education">Education</a></div>
+        <div><a href="#skills">Skills</a></div>
     </div>
 
-</head>
-<body>
-<h1>Contact Me</h1>
+    <h1>About Me</h1>
+
     <div class="about_me">
+   <p>
     A <strong> fast learner </strong> offering the ability to access an organization's needs and create a complementary, robust web presence.
     Experinced in all 5 stages of the web development process including:
     information <strong> gathering, planning, design, development, testing, delivery and maintenance</strong>.
     Proficient with a wide array of scripting languages and multimedia web tools.
-    </div>
-    <div id='skills'>
+   </p>
+   </div>
 
-    <h1>Skills &raquo;</h1>
+    <div id="skills">
+
+    <h1>Skills: </h1>
+
 
     <ul class="skillset">
         <li>Javascript</li>
@@ -71,7 +81,9 @@
     </ul>
 </div>
 
+
 <div id='education'>
+
     <div style="padding: 1em 3em 3em 3em">
         <h1>Education &raquo;</h1>
         <div class="qualification">BS, Web Development<span class="sub">degree expected June, 2013</span>
@@ -99,10 +111,12 @@
         </div>
     </div>
 </div>
+
 <div id="experience">
     <h1>Experience &raquo;</h1>
-    <div class="exp_title">Senior Web Developer</span>
-        <div class="exp_location">Food Bank,San Jose</span>
+    <div class="experience_block">
+        <span class="exp_title">Senior Web Developer</span>
+        <span class="exp_location">Food Bank,San Jose</span>
             <span class="exp_link"><a href="http://www.yahoo.com">www.foodbank.com</a></span>
         </div>
         <ul class="exp_list">
@@ -126,24 +140,16 @@
         </ul>
     </div>
 
-<form action="http://uitr.herokuapp.com/contactfromsubmit" method="post" name="contact_form">
-    <input type="text" placeholder="Name" name="name"/>
-    <br/><br/>
-    <input type="text" placeholder="Email" name="email"/> @mailinator.com
-    <br/><br/>
-    <input  type="text placeholder="Subject" name"subject"/>
-    <br/><br/>
-    <input type="text" placeholder="Message" name"message"/>
-    <br/><br/>
-    <input type="submit" value="Submit"/>
-</form>
+
 
     <footer id='footer'>
         <div class="copyright">&copy; Sarita Bhoot. All rights reserved.</div>
     </footer>
 
-</body>
 </div>
+
+</body>
+
 </html>
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styles Test</title>
+    <link rel ="stylesheet" href ="css/base.css"/>
+    <script type="text/javascript">
+        window.onload = function(){
+
+            var btn =document.getElementById('btn1');
+            var btn2 =document.getElementById('btn2');
+            var btn3 =document.getElementById('btn3');
+            var div =document.getElementById('testStyles');
+            var stylesheets =document.stylesheets;
+            btn.onclick = function(){
+                stylesheets[0].disabled =true;
+            };
+            btn2.onclick = function(){
+                stylesheets[0].disabled =false;
+            };
+            var ss = stylesheets[0];
+
+            //inserting rules
+            btn3.onclick = function(){
+                console.log(ss.cssRules.length);
+                stylesheets[0].insertRule('h1{color:red !important;}', ss.cssRules.length);
+                console.log(ss.cssRules.length);
+            };
+        };
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>Handle Events</h1>
+    <button id='btn1'>Remove Styles</button>
+    <button id='btn2'>Add Styles</button>
+    <button id='btn3'>Add Rules</button>
+    <div id="testStyles"></div>
+</div>
+</body>
+</html>

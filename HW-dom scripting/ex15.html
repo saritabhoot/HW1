@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Capturing and Bubbling</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+    <style  type='text/css'>
+
+
+
+        body{
+
+            margin: 0;
+
+            font: 1em Raleway
+
+        }
+
+        div{
+
+            margin: 1em;
+
+            border: 1px solid red;
+
+            padding:3em;
+
+            color: rgba(216,0,3,0.49);
+
+        }
+
+    </style>
+
+
+
+    <script type="text/javascript">
+
+        window.onload = function(){
+
+
+
+            var div1 =document.body.children[0];
+
+            var div2 =div1.children[0];
+
+            var div3 =div2.children[0];
+
+
+
+            div1.addEventListener('click', addBackgroundColorRed, true);
+
+            div2.addEventListener('click', addBackgroundColorRed, true);
+
+            div3.addEventListener('click', addBackgroundColorRed, true);
+
+            div3.addEventListener('click', addBackgroundColorGreen, false);
+
+            div2.addEventListener('click', addBackgroundColorGreen, false);
+
+            div1.addEventListener('click', addBackgroundColorGreen, false);
+
+
+
+
+
+            function addBackgroundColorRed(){
+
+                this.style.backgroundColor = 'rgba(256,0,0,0.5)';
+
+                alert('interrupt');
+
+            }
+
+            function addBackgroundColorGreen(){
+
+                this.style.backgroundColor = 'rgba(0,0,256,0.5)';
+
+                alert('interrupt');
+
+            }
+
+
+
+        };
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+<div>
+
+    <div>
+
+        <div>
+
+            click me!
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
+               

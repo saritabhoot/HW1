@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script type="text/javascript">
+
+        window.onload = function(){
+
+
+
+            document.forms.contact_form.onsubmit = function(event){
+
+                event.preventDefault();
+
+                console.log('Hello World!');
+
+            }
+
+        }
+
+
+
+    </script>
+
+    <title>DOM Scripting</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel ="stylesheet" href ="css/object.css"/>
+
+    <script type="text/javascript" src="../js/jquery.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+<div id='print_to_console'>(view firebug console)<br/>
+
+</div>
+
+<div class="center">Timeline for DOM Parsing</div>
+
+
+
+<div class="center">
+
+    <a id='link' href="javascript: void 0;">Link Event</a>
+
+</div>
+
+
+
+<div class="center">
+
+    <form name ="contact_form" method="POST" action='/json'>
+
+        <div class="row"><input type="text" placeholder="name"/></div>
+
+        <div class="row"><input type="text" placeholder="email"/></div>
+
+        <div class="row"><input type="text" placeholder="telephone"/></div>
+
+        <div class="row"><textarea placeholder="message"></textarea>
+
+        </div>
+
+        <div class="row"></div>
+
+        <button id='submit'>Submit</button>
+
+    </form>
+
+
+
+</div>
+
+</body>
+
+</html>

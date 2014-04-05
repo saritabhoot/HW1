@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Test</title>
+    <link rel ="stylesheet" href ="css/base.css"/>
+    <script type="text/javascript">
+        window.onload = function(){
+
+            var btn2 =document.getElementById('btn2');
+            btn2.onclick = function(){
+                alert('Button 2 clicked\n (btn2.onclick = function(){...})');
+
+            };
+
+            //run the above code before running this
+            btn2.onclick = function(){
+                alert('Button 2 clicked\n Did you get to see two alert buttons?\n No?\nTough luck!');
+
+            };
+            var btn3 =document.getElementById('btn3');
+            btn3.addEventListener('click', btn3Handler1);
+            btn3.addEventListener('click', btn3Handler2);
+            btn3.onclick = function(){
+                alert('Button 3 clicked - onclick handler!\nbtn3.onclick = function(){...};');
+
+            };
+            function btn3Handler1(){
+                alert('Button 3 clicked!\nbtn3.addEventListener = function(){...};');
+
+            }
+            function btn3Handler2(){
+                alert('Button 3 clicked - second handler!\nbtn3.addEventListener = function(){...};');
+
+            }
+            //write code to remove the listeners
+            document.getElementById('btn4').onclick = function(){
+                var btn3 = document.getElementById('btn3');
+                btn3.removeEventListener('click', btn3Handler1);
+                btn3.removeEventListener('click', btn3Handler2);
+            };
+        };
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>Ways to handle Events</h1>
+    <button id='btn1' onclick="alert('Button1 clicked! onclick = \'alert(...blah blah blah....)\'');">Onclick - Property Handler as an HTML Attribute</button>
+    <br/><br/>
+    <button id='btn2'>Onclick - Property assigned in the script</button>
+    <br/><br/>
+    <button id='btn3'>click - addEventListener() </button>
+    <br/><br/>
+    <button id='btn4'>Remove Event Handlers 1 and 2 for button3</button>
+</div>
+</body>
+</html>

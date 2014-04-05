@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Scripting</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel ="stylesheet" href ="css/object.css"/>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        window.onload = function(){
+            //example of setTimeout()
+            var op =document.getElementById('output_data');
+            op.innerHTML = '(you will be redirected to google.com on 3s...)';
+            var functionx = function(){
+                window.location = 'http://www.google.com';
+
+            };
+            setTimeout(functionx, 3000);
+            //setInterval has already been demonstrated in 1script.html
+
+        };
+
+    </script>
+
+</head>
+
+<body>
+
+<div id='print_to_console'>(view firebug console)<br/>
+</div>
+<div class="center">Generic Examples - Window Object</div>
+<div class="center">
+    <span class="describe_box">program output</span>
+    <span class="opbox" id='output_data'>&lt; No output as of now!&gt;</span>
+</div>
+
+<table>
+    <thead>
+    <th></th>
+    </thead>
+    <tbody>
+    <tr>
+    </tr>
+    </tbody>
+</table>
+</div>
+</body>
+</html>

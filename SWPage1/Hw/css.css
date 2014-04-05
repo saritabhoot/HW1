@@ -1,6 +1,6 @@
 /*Import*/
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
-@import url(http://fonts.googleapis.com/css?family=Syncopate:400,700|Oepn+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Syncopate:400,700|Open+Sans:400,300,600,700);
 
 #container
 {
@@ -10,7 +10,7 @@
 }
 body
 {
-    background:#d7d7d5 url(../img/gray_noise.png) repeat;
+    background:#d7d7d5 url('../img/gray_noise.png') repeat;
     font:300 100% open Sans;
 }
 h1
@@ -56,19 +56,19 @@ li.link:hover
 {
     color:#444;
     -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms eases;
+    -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
-    transition:all 500ms ease;
+    transition: all 500ms ease;
 
 }
 li.contact_me
 {
     color:#444;
     font-weight:800;
-    text-decoration:underline;
+    text-decoration: underline;
 }
-li.contact_me
+li.contact_me:hover
 {
     color:#222;
 }
@@ -116,10 +116,11 @@ div.section_link > a:hover
 {
     color:#222;
     -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms eases;
+    -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition:all 500ms ease;
+
 }
 #div
 {
@@ -143,7 +144,7 @@ div.about_me
     color: white;
     background-color:rgba(207,85,58,0.90);
     letter-spacing:0.02em;
-    line-height:1.65;
+    line-height:1.65em;
     padding: 0.35em 2em 2em 2em;
     width:60%;
     float:left;
@@ -179,11 +180,11 @@ ul.skillset > li:hover
     background-color:#333;
     color:#ffffff;
     -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms eases;
+    -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition:all 500ms ease;
-    cursor:default;
+
 }
 #education
 {
@@ -201,7 +202,7 @@ div.qualification
 
 div.university
 {
-    font:300 1.75em 'Open Sans';
+    font:300 1em 'Open Sans';
     float:left;
     padding:0.05em;
     width:80%;
@@ -217,44 +218,44 @@ span.sub
 {
     color: #9a9a9a;
     font-size:0.55em;
-    font-size: 12px;
+    font-size: 0.55em;
     font-family: avenir;
     color:#000;
 }
 
-div.course_1 > ul
+div.courses_1 > ul
 {
     list-style-type: none;
     padding-right: 1em;
     line-height:1.75em;
     text-transform:capitalize;
 }
-div.course_1 > ul > li
+div.courses_1 > ul > li
 {
     color: #666;
 }
-div.course_1 > ul > li:nth-child(2n+1)
+div.courses_1 > ul > li:nth-child(2n+1)
 {
     color: #555;
 }
-div.course_1 > ul > li:hover
+div.courses_1 > ul > li:hover
 {
     color:#222;
     -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms eases;
+    -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition:all 500ms ease;
-    cursor:default;
+
 }
-div.course_2
+div.courses_2
 {
     float:left;
     padding-top:1em;
     width:50%;
     text-align:left;
 }
-div.course_2 > ul
+div.courses_2 > ul
 {
     border-right:none;
     border-left: 1px solid gray;
